@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-beige: #F5F0EB;
+  --color-beige-dark: #E8E0D8;
+  --color-black: #0A0A0A;
+  --color-gray-mid: #6B6B6B;
+  --color-gray-light: #D4D0CB;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+/* Animations */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Hard edges everywhere */
+* {
+  border-radius: 0 !important;
+}
+
+/* Selection */
+::selection {
+  background-color: #0A0A0A;
+  color: #F5F0EB;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F0EB;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A0A0A;
+}
+
+/* Base body */
+body {
+  background: #F5F0EB;
+  color: #0A0A0A;
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
