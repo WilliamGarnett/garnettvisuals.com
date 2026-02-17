@@ -1,4 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { SectionHeader } from "./SectionHeader";
+const src = "/profile.png";
 
 export function AboutSection() {
   return (
@@ -8,12 +11,15 @@ export function AboutSection() {
       <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
         {/* Photo placeholder */}
         <div className="md:col-span-4">
-          <div className="flex aspect-[3/4] items-center justify-center border border-dashed border-gray-light bg-beige-dark/30">
+          <div className="flex aspect-[4/3] items-center justify-center border border-dashed border-gray-light bg-beige-dark/30">
             <div className="text-center text-gray-mid">
-              <div className="mb-2 text-xs uppercase tracking-widest">
-                [photo]
-              </div>
-              <div className="text-xs">384 x 512</div>
+              <img
+                src={src}
+                alt="Profile"
+                width={500}
+                height={500}
+                className="rounded-md"
+              />
             </div>
           </div>
         </div>
@@ -26,8 +32,7 @@ export function AboutSection() {
               location: <span className="text-black">Stockholm, Sweden</span>
             </p>
             <p>
-              status:{" "}
-              <span className="text-black">Available for projects</span>
+              status: <span className="text-black">Available for projects</span>
             </p>
             <p>
               experience: <span className="text-black">5+ years</span>
