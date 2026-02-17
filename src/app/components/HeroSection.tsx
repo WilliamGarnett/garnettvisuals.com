@@ -96,26 +96,31 @@ export function HeroSection() {
 
         {/* Name with typewriter */}
         <h1 className="text-4xl font-bold leading-none tracking-tight md:text-6xl lg:text-7xl">
-          {lines[0]}
-          {lines.length === 1 && (
-            <span className="animate-blink ml-1 inline-block h-[0.85em] w-[0.5em] bg-black align-baseline" />
-          )}
-          {lines.length > 1 && (
-            <>
-              <br />
-              {lines[1]}
-              <span
-                className={`ml-1 inline-block h-[0.85em] w-[0.5em] bg-black align-baseline ${
-                  phase === "done" ? "opacity-0  duration-500 delay-1000" : "animate-blink"
-                }`}
-              />
-            </>
-          )}
+          <span className="block">
+            {lines[0]}
+            {lines.length === 1 && (
+              <span className="animate-blink ml-1 inline-block h-[0.85em] w-[0.5em] bg-black align-baseline" />
+            )}
+          </span>
+          <span className="block">
+            {lines.length > 1 ? (
+              <>
+                {lines[1]}
+                <span
+                  className={`ml-1 inline-block h-[0.85em] w-[0.5em] bg-black align-baseline ${
+                    phase === "done" ? "opacity-0 duration-500 delay-1000" : "animate-blink"
+                  }`}
+                />
+              </>
+            ) : (
+              <span className="invisible">{GARNETT}</span>
+            )}
+          </span>
         </h1>
 
         {/* Title - wipe reveal */}
         <p
-          className="mt-6 text-lg font-light tracking-wide text-gray-mid transition-[clip-path] duration-1500 ease-out md:text-xl"
+          className="mt-6 text-lg font-light tracking-wide text-gray-mid transition-[clip-path] duration-1000 ease-out md:text-xl"
           style={{
             clipPath: showRest
               ? "inset(0 0% 0 0)"
@@ -125,17 +130,21 @@ export function HeroSection() {
           Frontend Developer
         </p>
 
-        {/* Tagline - wipe reveal */}
-        <p
-          className="mt-4 max-w-md text-sm text-gray-mid transition-[clip-path] duration-1500 ease-out delay-300"
+        {/* Services button - wipe reveal */}
+        <button
+          onClick={() =>
+            document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })
+          }
+          className="mt-6 flex w-fit items-center gap-2 bg-black px-5 py-2.5 text-sm text-beige transition-[clip-path] duration-200 ease-out delay-200 hover:opacity-80"
           style={{
             clipPath: showRest
               ? "inset(0 0% 0 0)"
               : "inset(0 100% 0 0)",
           }}
         >
-          {"// clarity through code"}
-        </p>
+          Services
+          <span className="text-base leading-none">&rarr;</span>
+        </button>
       </div>
 
       {/* Bottom scroll indicator */}

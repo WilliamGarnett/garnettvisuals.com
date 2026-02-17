@@ -49,10 +49,10 @@ export function ClientsSection() {
     <section id="clients" className="px-6 py-24 md:px-16 lg:px-24">
       <SectionHeader label="CLIENTS" index="03" />
 
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-10">
         {clients.map((client) => (
-          <div key={client.name} className="flex flex-col items-center gap-3">
-            <div className="flex h-24 w-24 items-center justify-center border border-dashed border-gray-light bg-beige-dark/30 p-4">
+          <div key={client.name} className="flex flex-col items-center gap-3 md:gap-4">
+            <div className="flex h-24 w-24 items-center justify-center border border-dashed border-gray-light bg-beige-dark/30 p-4 md:h-32 md:w-32 md:p-5">
               <Image
                 src={client.logo}
                 alt={client.name}
