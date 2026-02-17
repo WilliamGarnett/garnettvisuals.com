@@ -3,24 +3,44 @@ import { SectionHeader } from "./SectionHeader";
 
 const clients = [
   {
-    name: "Acme Corp",
-    logo: "/clients/acme.png",
+    name: "TUVA",
+    logo: "/clients/TUVA.png",
     work: "Frontend Development",
   },
   {
-    name: "Northlight",
-    logo: "/clients/northlight.png",
+    name: "SSL",
+    logo: "/clients/SSL.png",
     work: "Video Production",
   },
   {
-    name: "Streamline",
-    logo: "/clients/streamline.png",
-    work: "UI/UX Implementation",
+    name: "BIG",
+    logo: "/clients/BIG.png",
+    work: "Video Production",
   },
   {
-    name: "Verdant",
-    logo: "/clients/verdant.png",
-    work: "Frontend Development",
+    name: "EXEL",
+    logo: "/clients/EXEL.png",
+    work: "Content Production",
+  },
+  {
+    name: "ALLSTAR",
+    logo: "/clients/ALLSTAR.png",
+    work: "Content Production",
+  },
+  {
+    name: "RENEVATIO",
+    logo: "/clients/RENEVATIO.png",
+    work: "Content Production",
+  },
+  {
+    name: "ONGOAL",
+    logo: "/clients/ONGOAL.png",
+    work: "Content Production",
+  },
+  {
+    name: "OXDOG",
+    logo: "/clients/OXDOG.png",
+    work: "Video Production",
   },
 ];
 
@@ -43,7 +63,7 @@ export function ClientsSection() {
             </div>
             <div className="text-center">
               <p className="text-sm font-medium">{client.name}</p>
-              <p className="text-xs text-gray-mid">{client.work}</p>
+              {/* <p className="text-xs text-gray-mid">{client.work}</p> */}
             </div>
           </div>
         ))}
