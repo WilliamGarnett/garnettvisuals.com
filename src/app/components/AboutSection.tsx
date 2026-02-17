@@ -1,7 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable react/jsx-no-comment-textnodes */
+import Image from "next/image";
 import { SectionHeader } from "./SectionHeader";
-const src = "/profile.png";
 
 export function AboutSection() {
   return (
@@ -12,15 +10,13 @@ export function AboutSection() {
         {/* Photo placeholder */}
         <div className="md:col-span-4">
           <div className="flex aspect-[4/3] items-center justify-center border border-dashed border-gray-light bg-beige-dark/30">
-            <div className="text-center text-gray-mid">
-              <img
-                src={src}
-                alt="Profile"
-                width={500}
-                height={500}
-                className="rounded-md"
-              />
-            </div>
+            <Image
+              src="/profile.png"
+              alt="Profile"
+              width={500}
+              height={500}
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
 

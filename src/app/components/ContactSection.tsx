@@ -3,7 +3,7 @@ import { SectionHeader } from "./SectionHeader";
 export function ContactSection() {
   return (
     <section id="contact" className="px-6 py-24 md:px-16 lg:px-24">
-      <SectionHeader label="CONTACT" index="03" />
+      <SectionHeader label="CONTACT" index="04" />
 
       <div className="max-w-lg">
         {/* Primary email */}
