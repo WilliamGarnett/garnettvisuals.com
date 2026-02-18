@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="md:col-span-4">
           <div className="flex aspect-[4/3] items-center justify-center border border-dashed border-gray-light bg-beige-dark/30">
             <Image
-              src="/profile.png"
+              src="/william-garnett.png"
               alt="Profile"
               width={500}
               height={500}
@@ -35,7 +35,9 @@ export function AboutSection() {
             </p>
             <p>
               focus:{" "}
-              <span className="text-black">React, Svelte, Next.js, TypeScript, Figma</span>
+              <span className="text-black">
+                React, Svelte, Next.js, TypeScript, Figma
+              </span>
             </p>
           </div>
 
@@ -47,8 +49,8 @@ export function AboutSection() {
               usability, performance, and visual polish.
             </p>
             <p>
-              Every project starts with the user and ends with an interface
-              that feels effortless — whether it&apos;s presenting complex data or
+              Every project starts with the user and ends with an interface that
+              feels effortless — whether it&apos;s presenting complex data or
               guiding someone through a seamless experience.
             </p>
           </div>
