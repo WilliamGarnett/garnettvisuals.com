@@ -31,24 +31,25 @@ export function AboutSection() {
               status: <span className="text-black">Available for projects</span>
             </p>
             <p>
-              experience: <span className="text-black">5+ years</span>
+              experience: <span className="text-black">3+ years</span>
             </p>
             <p>
               focus:{" "}
-              <span className="text-black">React, Next.js, TypeScript</span>
+              <span className="text-black">React, Svelte, Next.js, TypeScript, Figma</span>
             </p>
           </div>
 
           {/* Bio */}
           <div className="max-w-lg space-y-4 text-sm leading-relaxed">
             <p>
-              I build interfaces where data meets clean design. Specializing in
-              frontend development with a focus on performance, accessibility,
-              and visual precision.
+              I build clean, intuitive interfaces that people genuinely enjoy
+              using. Specializing in frontend development with a focus on
+              usability, performance, and visual polish.
             </p>
             <p>
-              Every project starts with understanding the data and ends with an
-              interface that makes that data feel effortless to navigate.
+              Every project starts with the user and ends with an interface
+              that feels effortless — whether it&apos;s presenting complex data or
+              guiding someone through a seamless experience.
             </p>
           </div>
         </div>

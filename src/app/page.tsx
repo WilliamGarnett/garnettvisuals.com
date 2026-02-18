@@ -10,11 +10,11 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <FadeInOnScroll>
-        <AboutSection />
-      </FadeInOnScroll>
       <FadeInOnScroll delay={100}>
         <ServicesSection />
+      </FadeInOnScroll>
+      <FadeInOnScroll>
+        <AboutSection />
       </FadeInOnScroll>
       <FadeInOnScroll delay={100}>
         <ClientsSection />

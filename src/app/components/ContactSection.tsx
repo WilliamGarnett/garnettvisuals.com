@@ -43,7 +43,6 @@ export function ContactSection() {
         {/* Terminal prompt */}
         <div className="mt-16 text-sm text-gray-mid">
           <span className="text-black">&gt;</span> ready for collaboration
-          <span className="ml-1 inline-block h-[1.1em] w-[0.6em] bg-black align-text-bottom" />
         </div>
       </div>
     </section>
