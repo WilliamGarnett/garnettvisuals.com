@@ -4,7 +4,7 @@ import { SectionHeader } from "./SectionHeader";
 export function AboutSection() {
   return (
     <section id="about" className="px-6 py-24 md:px-16 lg:px-24">
-      <SectionHeader label="ABOUT" index="01" />
+      <SectionHeader label="ABOUT" index="02" />
 
       <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16">
         {/* Photo placeholder */}

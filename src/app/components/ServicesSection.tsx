@@ -30,7 +30,7 @@ const services = [
 export function ServicesSection() {
   return (
     <section id="services" className="px-6 py-24 md:px-16 lg:px-24">
-      <SectionHeader label="SERVICES" index="02" />
+      <SectionHeader label="SERVICES" index="01" />
 
       <div className="grid grid-cols-1 gap-0 md:grid-cols-2">
         {services.map((service) => (
