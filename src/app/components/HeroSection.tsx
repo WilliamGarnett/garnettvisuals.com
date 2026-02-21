@@ -13,9 +13,9 @@ const TYPE_START = INIT_DURATION + INIT_FADE_OUT + 0;
 const LINE_PAUSE = 0;
 
 export function HeroSection() {
-  const [phase, setPhase] = useState<
-    "init" | "init-out" | "typing" | "done"
-  >("init");
+  const [phase, setPhase] = useState<"init" | "init-out" | "typing" | "done">(
+    "init",
+  );
   const [typed, setTyped] = useState("");
   const [showRest, setShowRest] = useState(false);
 
@@ -70,8 +70,6 @@ export function HeroSection() {
 
   return (
     <section className="relative flex min-h-screen flex-col items-center justify-center px-6 md:px-16 lg:px-24">
-      
-
       {/* === PHASE: Main hero content === */}
       <div
         className={`flex w-full max-w-4xl flex-col justify-center self-start ${
@@ -83,9 +81,7 @@ export function HeroSection() {
           className={`absolute left-6 top-6 text-xs text-gray-mid ${
             showRest ? "opacity-100" : "opacity-0"
           }`}
-        >
-          x:0 y:0
-        </span>
+        ></span>
         <span
           className={`absolute right-6 top-6 text-xs text-gray-mid ${
             showRest ? "opacity-100" : "opacity-0"
@@ -108,7 +104,9 @@ export function HeroSection() {
                 {lines[1]}
                 <span
                   className={`ml-1 inline-block h-[0.85em] w-[0.5em] bg-black align-baseline ${
-                    phase === "done" ? "opacity-0 duration-500 delay-1000" : "animate-blink"
+                    phase === "done"
+                      ? "opacity-0 duration-500 delay-1000"
+                      : "animate-blink"
                   }`}
                 />
               </>
@@ -122,9 +120,7 @@ export function HeroSection() {
         <p
           className="mt-6 text-lg font-light tracking-wide text-gray-mid transition-[clip-path] duration-1000 ease-out md:text-xl"
           style={{
-            clipPath: showRest
-              ? "inset(0 0% 0 0)"
-              : "inset(0 100% 0 0)",
+            clipPath: showRest ? "inset(0 0% 0 0)" : "inset(0 100% 0 0)",
           }}
         >
           Frontend Developer
@@ -133,13 +129,13 @@ export function HeroSection() {
         {/* Services button - wipe reveal */}
         <button
           onClick={() =>
-            document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })
+            document
+              .getElementById("services")
+              ?.scrollIntoView({ behavior: "smooth" })
           }
           className="mt-6 flex w-fit items-center gap-2 bg-black px-5 py-2.5 text-sm text-beige transition-[clip-path] duration-200 ease-out delay-200 hover:opacity-80"
           style={{
-            clipPath: showRest
-              ? "inset(0 0% 0 0)"
-              : "inset(0 100% 0 0)",
+            clipPath: showRest ? "inset(0 0% 0 0)" : "inset(0 100% 0 0)",
           }}
         >
           Services

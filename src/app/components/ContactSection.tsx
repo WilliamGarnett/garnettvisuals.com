@@ -30,7 +30,7 @@ export function ContactSection() {
           <p>
             <span className="text-gray-mid">linkedin:</span>{" "}
             <a
-              href="https://linkedin.com/in/williamgarnett"
+              href="https://www.linkedin.com/in/william-garnett-032952192/"
               className="underline-offset-2 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
